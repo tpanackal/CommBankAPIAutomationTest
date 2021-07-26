@@ -1,0 +1,133 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-26T22:02:32.596Z",
+        "line": 4,
+        "name": "Validate that GetUsers API retrieves the list of all active users",
+        "description": "",
+        "id": "validate-that-get--create-and-update-covid-challenge-api-s-are-providing-correct-responses.;validate-that-getusers-api-retrieves-the-list-of-all-active-users",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4710835000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I call Get Users API",
+            "match": {
+              "location": "com.steps.GetUsersStepDefinition.iCallGetUsersAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 141764000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should get the list of all active users in the leaderboard",
+            "match": {
+              "location": "com.steps.GetUsersStepDefinition.iShouldGetTheListOfAllActiveUsersInTheLeaderboard()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-26T22:02:37.545Z",
+        "line": 9,
+        "name": "Validate that Create User API creates a new user to the leaderboard",
+        "description": "",
+        "id": "validate-that-get--create-and-update-covid-challenge-api-s-are-providing-correct-responses.;validate-that-create-user-api-creates-a-new-user-to-the-leaderboard",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2122739000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I call Create User API",
+            "match": {
+              "location": "com.steps.CreateUserStepDefinition.iCallCreateUserAPI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 339548000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should be to see a new user created to the leaderboard",
+            "match": {
+              "location": "com.steps.CreateUserStepDefinition.iShouldBeToSeeANewUserCreatedToTheLeaderboard()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-26T22:02:40.011Z",
+        "line": 14,
+        "name": "Validate that Update User API updates the user details correctly to the leaderboard",
+        "description": "",
+        "id": "validate-that-get--create-and-update-covid-challenge-api-s-are-providing-correct-responses.;validate-that-update-user-api-updates-the-user-details-correctly-to-the-leaderboard",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1804024000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I call Update User API for an existing user",
+            "match": {
+              "location": "com.steps.UpdateUserStepDefinition.iCallUpdateUserAPIForAnExistingUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 260000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should be to see the updated details of the user reflected correctly to the leaderboard",
+            "match": {
+              "location": "com.steps.UpdateUserStepDefinition.iShouldBeToSeeTheUpdatedDetailsOfTheUserReflectedCorrectlyToTheLeaderboard()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Validate that Get, Create and Update Covid Challenge API\u0027s are providing correct responses.",
+    "description": "",
+    "id": "validate-that-get--create-and-update-covid-challenge-api-s-are-providing-correct-responses.",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/com/features/CovidChallengeAPITest.feature",
+    "tags": []
+  }
+]
