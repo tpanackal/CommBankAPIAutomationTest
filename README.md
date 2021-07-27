@@ -9,6 +9,7 @@ API Test Automation Suite for validating that Covid Challenge API's can be used 
 
  
 ## Observations:
+1. Delete Users API Scenario could not be covered since the delete key needed to make a delete request was not provided as part of the Swagger documentation.
 1. The Invalid Request For GetUsers API cannot be triggered , since being a get request with no headers in this case the only invalid parameter in this case would to be to modify the url , which would result in a 404 status code instead of a 400 status code.
 1. The Invalid Request For Create User API actual response schema does not match with what has been documented in Swagger.
 1. On testing The Invalid Request For Update User API, it has been found that passing a null value in the score paramter causes the entire set of API's to crash and be out of service.
